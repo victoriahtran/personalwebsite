@@ -1,0 +1,109 @@
+/********** HEADER **********/
+
+header {
+    display: flex;
+    flex-direction: row;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 25px;
+    float: right;
+    background-color: white;
+    width: 100%;
+    justify-content: right;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 100;
+    padding-top: 25px;
+}
+
+header a {
+    text-decoration: none;
+    width: 190px;
+    height: 50px;
+    text-align: center;
+    color: black;
+    -webkit-transition: color 1s;
+    transition: color 1s;
+}
+
+header a:hover {
+    color: #A6D1E6;
+}
+
+/********** BUTTON ***********/
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.button-container a {
+    text-decoration: none;
+}
+
+.button {
+    width: 220px;
+    height: 40px;
+    background-color: #A6D1E6;
+    color: white;
+    font-family: articulat-cf, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********** RESUME ***********/
+
+.resume {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    display: block;
+}
+.resume img {
+    margin: auto;
+    width: 50%;
+    text-align: center;
+    display: block;
+    border: 3px solid #A6D1E6;
+    margin-bottom: 110px;
+    margin-top: 30px;
+    box-shadow: 35px 35px #A6D1E6;
+}
+
+a {
+    text-decoration: none;
+}
+
+/********** FOOTER ***********/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.footericons {
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer a {
+    text-decoration: none;
+}
+.footer img {
+    width: 30px;
+    height: auto;
+}
