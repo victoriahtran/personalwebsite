@@ -51,7 +51,7 @@ header a:hover {
 .button {
   width: 220px;
   height: 40px;
-  background-color: #a6d1e6;
+  background-color: #cbeeff;
   color: white;
   font-family: articulat-cf, sans-serif;
   font-weight: 700;
@@ -59,6 +59,12 @@ header a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.button:hover {
+  background-color: #a6d1e6;
 }
 
 /********** RESUME ***********/

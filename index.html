@@ -1,107 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>Victoria Tran</title>
+    <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <link rel="stylesheet" href="https://use.typekit.net/jin5oza.css" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
     />
-    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
-    <link rel="stylesheet" href="css/stylesheet.css" />
-    <title>Victoria Tran</title>
+    <link rel="stylesheet" href="https://use.typekit.net/jin5oza.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
   </head>
 
   <body>
-    <header>
-      <a class="current" href="index.html">home</a>
-      <a href="resume.html">resume</a>
-    </header>
+    <nav>
+      <a href="#home">home</a>
+      <a href="#about">about</a>
+      <a href="#resume">resume</a>
+      <a href="#projects">projects</a>
+    </nav>
 
-    <div class="sidebar">
-      <div class="button-container">
-        <a href="#logo"></a>
-        <a href="#about"></a>
-        <a href="#skills"></a>
-      </div>
-    </div>
-
-    <section class="section" id="logo">
-      <div class="cube-logo">
-        <img src="/assets/images/cubeanimation.gif" />
-      </div>
-    </section>
-
-    <section class="section" id="about">
-      <div class="about-section">
-        <div class="img-container">
-          <img src="/assets/images/selfpicture.png" />
+    <main>
+      <section id="home">
+        <img src="/assets/images/selfpicture.png" />
+        <h1>VICTORIA <br />TRAN</h1>
+      </section>
+      <section id="about">
+        <div class="section-title">
+          <img src="/assets/images/eyes.png" />
+          <h2 class="highlight">— hello!</h2>
         </div>
-        <div class="about-section-text">
-          <div class="name">VICTORIA TRAN</div>
-          <div class="description">
-            Student at Northwestern University majoring in Computer Science and
-            pursuing the Human-Computer Interaction Certificate. Interested in
-            software development and design to create a complete user
-            experience.
+        <div class="content">
+          <p>
+            I’m Victoria, a current junior at
+            <span class="highlight">Northwestern University</span> in Evanston,
+            IL. I'm majoring in
+            <span class="highlight">Computer Science</span> in addition to
+            pursuing the
+            <span class="highlight"
+              >Human-Computer Interaction Certificate.</span
+            >
+            I’m primarily interested in software development, design, and
+            human-computer interaction.
+          </p>
+          <p>
+            Apart from school, I enjoy creative writing, fashion, curating my
+            skincare routine, making Spotify playlists, cooking (I thankfully
+            haven't burned down my kitchen yet), and scouring Yelp for the next
+            best place to eat. Feel free to contact me!
+          </p>
+        </div>
+      </section>
+      <section id="resume">
+        <div class="section-title">
+          <img src="/assets/images/eyes.png" />
+          <h2 class="highlight">— resume!</h2>
+        </div>
+        <div class="content">
+          <div class="resume-1">
+            <h3>NORTHWESTERN UNIVERSITY</h3>
+            <h3 class="subtitle">computer science + hci certificate</h3>
+            <p>
+              <span class="bold">Coursework:</span> Web Development, HCI,
+              Artificial Intelligence, Data Structures & Algorithms, Generative
+              Methods, Design & Analysis of Algorithms, Discrete Math, Computer
+              Systems
+            </p>
+          </div>
+          <div class="resume-2">
+            <h3 class="skills">SKILLS</h3>
+            <p class="skilllist">
+              <span class="bold">Languages:</span> Python, JavaScript, HTML,
+              CSS, React, React Native, C, C++, SQL
+            </p>
+            <p class="skilllist">
+              <span class="bold">Design:</span> Figma, Photoshop, Illustrator
+            </p>
+            <p class="skilllist">
+              <span class="bold">Other:</span> Git, Firebase, Postman, Heroku,
+              Flask, NumPy
+            </p>
           </div>
         </div>
-      </div>
-    </section>
+        <button class="download">
+          <a
+            href="assets/downloads/Resume_VictoriaTran.pdf"
+            download="Resume_VictoriaTran"
+          >
+            DOWNLOAD FULL .PDF
+          </a>
+        </button>
+      </section>
 
-    <section class="section" id="skills">
-      <div class="skillsection">
-        <div class="skillsectionlist">
-          <div class="skilltext">languages</div>
-          <div class="skilltext">other skills</div>
-          <div class="skilltext">design</div>
+      <section id="projects">
+        <div class="section-title">
+          <img src="/assets/images/eyes.png" />
+          <h2 class="highlight">— projects!</h2>
         </div>
-        <div class="divider"></div>
-        <div class="icons">
-          <div class="icons-rows">
-            <img src="/assets/icons/python.png" />
-            <img src="/assets/icons/javascript.png" />
-            <img src="/assets/icons/css.png" />
-            <img src="/assets/icons/html.png" />
-            <img src="/assets/icons/react.png" />
-            <img src="/assets/icons/cplusplus.png" />
+        <div class="glide">
+          <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+              <li class="glide__slide">
+                <div class="content">
+                  <div class="piccontainer">
+                    <img
+                      class="projectimg"
+                      src="/assets/images/phonescreen.jpg"
+                    />
+                  </div>
+                  <div class="project-info">
+                    <h3>CLUBHUB</h3>
+                    <p>
+                      App designed for students to keep track of the clubs and
+                      organizations they are involved in. Functions include
+                      following clubs and being able to view a club’s basic
+                      information. Developed as part of Northwestern’s Institute
+                      of Electrical and Electronics Engineers (IEEE) in a team
+                      of 5.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="content">
+                  <div class="piccontainer">
+                    <img
+                      class="projectimg"
+                      src="/assets/images/phonescreen.jpg"
+                    />
+                  </div>
+                  <div class="project-info">
+                    <h3>SINGLE-PLAYER PAINTBALL</h3>
+                    <p>
+                      Game of paintball, but your opponent is your own computer.
+                      Hide behind your targets to conceal yourself. If your
+                      opponent shoots at the correct target, you lose one life.
+                      Once your opponent uses up three lives, you win. Developed
+                      with a partner for Northwestern’s class CS 211.
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="glide__slide">
+                <div class="content">
+                  <div class="piccontainer">
+                    <img
+                      class="projectimg"
+                      src="/assets/images/phonescreen.jpg"
+                    />
+                  </div>
+                  <div class="project-info">
+                    <h3>PERSONAL WEBSITE</h3>
+                    <p>
+                      My personal portfolio website. Developed and designed
+                      using HTML/CSS and JavaScript, as well as Figma to create
+                      mock-ups. Used JS event listeners to enable smooth
+                      scrolling and button functionalities. Optimized for mobile
+                      and desktop using CSS media queries.
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
           </div>
-          <div class="icons-rows">
-            <img src="/assets/icons/firebase.png" />
-            <img src="/assets/icons/sql.png" />
-            <img src="/assets/icons/flask.png" />
-            <img src="/assets/icons/postman.png" />
-            <img src="/assets/icons/heroku.png" />
-          </div>
-          <div class="icons-rows">
-            <img src="/assets/icons/figma.png" />
-            <img src="/assets/icons/photoshop.png" />
-            <img src="/assets/icons/illustrator.png" />
-            <img src="/assets/icons/cinema4d.png" />
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+              prev
+            </button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+              next
+            </button>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
+    </main>
 
-    <!-- FOOTER -->
-    <footer class="footer">
-      <div class="footericons">
-        <a href="mailto:victoriatran2024@u.northwestern.edu">
-          <img src="/assets/icons/email.png" />
-        </a>
-        <a href="https://github.com/victoriahtran">
-          <img src="/assets/icons/github.png" />
-        </a>
-        <a href="https://www.linkedin.com/in/victoriahcntran/">
-          <img src="/assets/icons/linkedin.png" />
-        </a>
-      </div>
+    <footer>
+      <a href="mailto:victoriatran2024@u.northwestern.edu">
+        <img src="/assets/icons/email.png" />
+      </a>
+      <a href="https://github.com/victoriahtran" target="_blank">
+        <img src="/assets/icons/github.png" />
+      </a>
+      <a href="https://www.linkedin.com/in/victoriahcntran/" target="_blank">
+        <img src="/assets/icons/linkedin.png" />
+      </a>
     </footer>
     <script src="index.js"></script>
-    >
-    <script src="https://cdn.jsdeliver.net/npm/bootstrap@5.2.9/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      new Glide(".glide").mount();
+    </script>
   </body>
 </html>
